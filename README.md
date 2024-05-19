@@ -6,7 +6,7 @@ This repository contains 3 main files pertaining to three main steps as shown in
 
 1. <b>Model selection:</b> ```model_selection.py``` contains this step. The user can train the model for all the specified ranges (1-4) and choose the best model with highest inferencing values. While not explicitly coded, the user can manually modify this code to switch from training to inferencing to perform the inferencing runs.
 
-2. <b>Multi-hardware training:</b> ```multi_hardware_training.py``` does this task. The best values range values chosen for each dataset are ```r = 1``` for ```iris``` and ```digits89``` datasets and ```r = 3``` for ```digits01``` dataset. The user can specify the desired dataset and configuration and train for 2 epochs. Number of epochs can be changed if needed.
+2. <b>Multi-hardware training:</b> ```multi_hardware_training.py``` does this task. The best range values chosen for each dataset are ```r = 1``` for ```iris``` and ```digits89``` datasets and ```r = 3``` for ```digits01``` dataset. The user can specify the desired dataset and configuration and train for 2 epochs. Number of epochs can be changed if needed.
 
 3. <b>Inferencing trained model:</b> ```multi_hardware_inferencing.py``` performs this task. Once again, the user can select the desired dataset and configuration for inferencing. As mentioned in the paper, the final inferencing accuracy is averaged for 10 inferencing runs. 
 
@@ -24,6 +24,9 @@ We also provide some additional code files that perform more analysis from the p
 5. ```tsne_cifar.ipynb``` uses code to figure out classifiable classes by plotting tsne prior to classification using QNN. This is more of a trial-and-error process and it is found out that classes 0 and 6 have reasonable separation for their tsne plots.
 
 6. ```utils.py``` majorly contains code to obtain a subset backend consisting of 8 qubits out of a larger hardware containing 20/27/127 qubits. This is done to significantly cut down simulation time as using all qubits at once in simulation yields infeasible compute time.
+
+## Trained models
+All the trained models are present in ```trained_models``` folder. We have added trained models for motivational example, model selection, multi-hardware training and cifar-10 binary classification. The users can validate our results using these models. One thing to note is that due to presence of noise, the users may observe some fluctuation in the results which numerically may not be exactly the same. However, the trend observed will be the exact same. 
 
 ## Python Library versions
 The following are all the relevant library versions for all python libraries used:
