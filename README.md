@@ -26,7 +26,7 @@ We also provide some additional code files that perform more analysis from the p
 6. ```utils.py``` majorly contains code to obtain a subset backend consisting of 8 qubits out of a larger hardware containing 20/27/127 qubits. This is done to significantly cut down simulation time as using all qubits at once in simulation yields infeasible compute time.
 
 ## Trained models
-All the trained models are present in ```trained_models``` folder. We have added trained models for motivational example, model selection, multi-hardware training and cifar-10 binary classification. The users can validate our results using these models. One thing to note is that due to presence of noise, the users may observe some fluctuation in the results which numerically may not be exactly the same. However, the trend observed will be the exact same. 
+All the trained models are present in ```trained_models``` folder. We have added trained models for motivational example, model selection, multi-hardware training and cifar-10 binary classification. The users can validate our results using these models. One thing to note is that due to presence of noise, the users may observe some fluctuation in the results which numerically may not yield exactly the same values. However, the trend observed will be the exact same. 
 
 ## Python Library versions
 The following are all the relevant library versions for all python libraries used:
